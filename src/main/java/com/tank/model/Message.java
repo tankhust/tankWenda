@@ -3,7 +3,7 @@ package com.tank.model;
 import java.util.Date;
 
 /**
- * Created by tank on 2016/7/24.
+ * Created by tank on 2018/7/24.
  */
 public class Message {
     private int id;

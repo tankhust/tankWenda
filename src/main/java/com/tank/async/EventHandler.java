@@ -3,7 +3,7 @@ package com.tank.async;
 import java.util.List;
 
 /**
- * Created by tank on 2016/7/30.
+ * Created by tank on 2018/7/30.
  */
 public interface EventHandler {
     void doHandle(EventModel model);

@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 /**
- * Created by tank on 2016/7/2.
+ * Created by tank on 2018/7/2.
  */
 @Mapper
 public interface CommentDAO {

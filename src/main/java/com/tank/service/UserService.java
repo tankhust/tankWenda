@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 
 /**
- * Created by tank on 2016/7/2.
+ * Created by tank on 2018/7/2.
  */
 @Service
 public class UserService {
@@ -52,7 +52,7 @@ public class UserService {
         user = new User();
         user.setName(username);
         user.setSalt(UUID.randomUUID().toString().substring(0, 5));
-        String head = String.format("http://images.tank.com/head/%dt.png", new Random().nextInt(1000));
+        String head = String.format("http://images.nowcoder.com/head/%dt.png", new Random().nextInt(1000));
         user.setHeadUrl(head);
         user.setPassword(WendaUtil.MD5(password+user.getSalt()));
         userDAO.addUser(user);
@@ -60,6 +60,7 @@ public class UserService {
         // 登陆
         String ticket = addLoginTicket(user.getId());
         map.put("ticket", ticket);
+        map.put("userId", user.getId());
         return map;
     }
 

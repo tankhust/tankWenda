@@ -13,11 +13,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by tank on 2016/8/28.
+ * Created by tank on 2018/8/28.
  */
 @Service
 public class SearchService {
-    private static final String SOLR_URL = "http://120.78.78.237:8983/solr/wenda";
+    private static final String SOLR_URL = "http://localhost:8983/solr/wenda";
     private HttpSolrClient client = new HttpSolrClient.Builder(SOLR_URL).build();
     private static final String QUESTION_TITLE_FIELD = "question_title";
     private static final String QUESTION_CONTENT_FIELD = "question_content";

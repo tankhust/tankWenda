@@ -1,7 +1,7 @@
 package com.tank.async;
 
 /**
- * Created by tank on 2016/7/30.
+ * Created by tank on 2018/7/30.
  */
 public enum EventType {
     LIKE(0),
@@ -10,7 +10,8 @@ public enum EventType {
     MAIL(3),
     FOLLOW(4),
     UNFOLLOW(5),
-    ADD_QUESTION(6);
+    ADD_QUESTION(6),
+    REGISTER(7);
 
     private int value;
     EventType(int value) { this.value = value; }

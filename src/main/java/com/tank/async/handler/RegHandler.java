@@ -13,10 +13,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by tank on 2018/7/30.
+ * @author tank
+ * @create 2019/02/26 22:25
  */
 @Component
-public class LoginExceptionHandler implements EventHandler {
+public class RegHandler implements EventHandler {
     @Autowired
     MailSender mailSender;
 
@@ -25,11 +26,11 @@ public class LoginExceptionHandler implements EventHandler {
         // xxxx判断发现这个用户登陆异常
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("username", model.getExt("username"));
-        mailSender.sendWithHTMLTemplate(model.getExt("email"), "tank问答网站", "mails/login_exception.html", map);
+        mailSender.sendWithHTMLTemplate(model.getExt("email"), "tank问答网站", "mails/register_exception.html", map);
     }
 
     @Override
     public List<EventType> getSupportEventTypes() {
-        return Arrays.asList(EventType.LOGIN);
+        return Arrays.asList(EventType.REGISTER);
     }
 }

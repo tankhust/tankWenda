@@ -3,7 +3,7 @@ package com.tank.model;
 import java.util.Date;
 
 /**
- * Created by tank on 2016/7/3.
+ * Created by tank on 2018/7/3.
  */
 public class LoginTicket {
     private int id;

@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
- * Created by tank on 2016/7/2.
+ * Created by tank on 2018/7/2.
  */
 @Controller
 public class LoginController {
@@ -44,6 +44,11 @@ public class LoginController {
                     cookie.setMaxAge(3600*24*5);
                 }
                 response.addCookie(cookie);
+
+                eventProducer.fireEvent(new EventModel(EventType.REGISTER)
+                        .setExt("username", username).setExt("email", username)
+                        .setActorId((int)map.get("userId")));
+
                 if (StringUtils.isNotBlank(next)) {
                     return "redirect:" + next;
                 }
@@ -83,7 +88,7 @@ public class LoginController {
                 response.addCookie(cookie);
 
                 eventProducer.fireEvent(new EventModel(EventType.LOGIN)
-                        .setExt("username", username).setExt("email", "tank_hust@163.com")
+                        .setExt("username", username).setExt("email", username)
                         .setActorId((int)map.get("userId")));
 
                 if (StringUtils.isNotBlank(next)) {

@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by tank on 2016/7/30.
+ * Created by tank on 2018/7/30.
  */
 @Service
 public class LikeService {

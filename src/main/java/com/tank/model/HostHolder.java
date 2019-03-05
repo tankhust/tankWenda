@@ -3,7 +3,7 @@ package com.tank.model;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by tank on 2016/7/3.
+ * Created by tank on 2018/7/3.
  */
 @Component
 public class HostHolder {

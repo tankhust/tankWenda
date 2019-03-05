@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by tank on 2016/7/30.
+ * Created by tank on 2018/7/30.
  */
 public class EventModel {
     private EventType type;

@@ -4,7 +4,7 @@ import com.tank.model.User;
 import org.apache.ibatis.annotations.*;
 
 /**
- * Created by tank on 2016/7/2.
+ * Created by tank on 2018/7/2.
  */
 @Mapper
 public interface UserDAO {

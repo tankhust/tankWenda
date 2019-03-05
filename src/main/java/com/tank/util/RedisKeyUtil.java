@@ -1,7 +1,7 @@
 package com.tank.util;
 
 /**
- * Created by tank on 2016/7/30.
+ * Created by tank on 2018/7/30.
  */
 public class RedisKeyUtil {
     private static String SPLIT = ":";

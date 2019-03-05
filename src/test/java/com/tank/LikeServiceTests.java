@@ -8,7 +8,7 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * Created by tank on 2016/8/28.
+ * Created by tank on 2018/8/28.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = WendaApplication.class)
