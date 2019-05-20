@@ -48,6 +48,7 @@ public class UserService {
             return map;
         }
 
+
         // 密码强度
         user = new User();
         user.setName(username);
